@@ -1,0 +1,34 @@
+//break/superbreak damage formula
+
+//formula:
+// base dmg * ability mult * (1 + break effect) * dmg increase mult
+// * def mult from target
+// * res mult from target
+// * vulnerab. mult from target
+// * dmg mitigation from target
+// * broken mult from target
+
+//ability mult is calculated as follows:
+// if specified: base ability mult + break dmg mult increase
+// if not is 100%
+
+//dmg increase mult is calculated as follows:
+// 1 + break dmg increase
+// if no break dmg buffs, then is 1
+
+//uses same def and res multipliers as base dmg
+
+//super break dmg formula:
+
+//(toughness red / 10) * lvl mult * ability mult
+// * (1 + break effect)
+// * (1 + break dmg increase)
+// * (1 + super break dmg increase)
+// * def mult from target
+// * res mult from target
+// * vulnerab. mult from target
+// * dmg mitigation from target
+// * broken mult from target
+
+// super break dmg increase effects include harmony tb's bonus ability 2
+//lets go

@@ -1,0 +1,42 @@
+{
+  "Phainon": {
+    "Rarity": 5,
+    "Element": "Physical",
+    "EidolonLevel": 2,
+    "HasPromotionalLightCone": true,
+    "LCSuperimpositionLevel": 1,
+    "level": 80,
+    "lightConeLvl": 80,
+    "IsStandard": false
+  },
+  "Sparkle": {
+    "Rarity": 5,
+    "Element": "Quantum",
+    "EidolonLevel": 0,
+    "HasPromotionalLightCone": false,
+    "LCSuperimpositionLevel": 1,
+    "level": 80,
+    "lightConeLvl": 80,
+    "IsStandard": false
+  },
+  "Cerydra": {
+    "Rarity": 5,
+    "Element": "Wind",
+    "EidolonLevel": 0,
+    "HasPromotionalLightCone": false,
+    "LCSuperimpositionLevel": 1,
+    "level": 80,
+    "lightConeLvl": 80,
+    "IsStandard": false
+  },
+  "Terravox": {
+    "Rarity": 5,
+    "Element": "Physical",
+    "EidolonLevel": 0,
+    "HasPromotionalLightCone": false,
+    "LCSuperimpositionLevel": 1,
+    "level": 80,
+    "lightConeLvl": 80,
+    "IsStandard": false
+  }
+}
