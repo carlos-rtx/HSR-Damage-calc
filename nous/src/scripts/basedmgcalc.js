@@ -82,17 +82,17 @@ function calculateKhaslanaMeteorStrikeDamage() {
     //Dispels all debuffs from this unit, then deals Physical DMG equal to a max of 1170% of Khaslana's ATK.
 //For every "Scourge" consumed, deals 4 instance(s) of DMG, with each instance dealing Physical DMG equal to 45% of Khaslana's ATK to one random enemy. When consuming 4 "Scourge", additionally deals Physical DMG equal to 450% of Khaslana's ATK, and this DMG is evenly distributed to all enemies.
     let stats = {
-        atk: 7750, //example value
-        critDmgPercent:6.20, 
+        atk: 3350, //example value
+        critDmgPercent:1, 
         elementDMG : 6.23,
-        abilitymult : 11.7,
+        abilitymult : 2.90,
         respen : 0.56,
         vuln : 0.74,
     }
     let mainStrikeDMG = baseDamageFormula({
         baseDmg: baseDMG(stats.atk, stats.abilitymult, 0), //example extra DMG value
         originalMultiplier: 1,
-        critMultiplier: CRITdmg(true, stats.critDmgPercent),
+        critMultiplier: 1,
         dmgBoost: stats.elementDMG,
         weakenMultiplier: 1, //example weaken value
         defMult: 0.79,
@@ -100,32 +100,8 @@ function calculateKhaslanaMeteorStrikeDamage() {
         vulnerabilityMultiplier: 1.7,
         mitigation: 1,
         brokenMultiplier: 0.9 //example broken multiplier value
-    });
-    let scourgeDMG = baseDamageFormula({
-        baseDmg: baseDMG(stats.atk, 0.45, 0), //example extra DMG value
-        originalMultiplier: 1,
-        critMultiplier: CRITdmg(true, stats.critDmgPercent),
-        dmgBoost: stats.elementDMG,
-        weakenMultiplier: 1, //example weaken value
-        defMult: 0.79,
-        resMult: resMult(0, stats.respen), //example resistance value
-        vulnerabilityMultiplier: 1.7,
-        mitigation: 1,
-        brokenMultiplier: 0.9 //example broken multiplier value
-    }) * 16; //16, 4 for each scourge or whatever instances of scourge DMG
-    let additionalDMG = baseDamageFormula({
-        baseDmg: baseDMG(stats.atk, 4.50, 0), //example extra DMG value
-        originalMultiplier: 1,
-        critMultiplier: CRITdmg(true, stats.critDmgPercent),
-        dmgBoost: stats.elementDMG,
-        weakenMultiplier: 1, //example weaken value
-        defMult: 0.79,
-        resMult: resMult(0, stats.respen), //example resistance value
-        vulnerabilityMultiplier: 1.7,
-        mitigation: 1,
-        brokenMultiplier: 0.9 //example broken multiplier value
-    });
-    let totalDamage = mainStrikeDMG + scourgeDMG + additionalDMG;
+    }); //16, 4 for each scourge or whatever instances of scourge DMG
+    let totalDamage = mainStrikeDMG;
     return totalDamage
 }       
  console.log(calculateKhaslanaMeteorStrikeDamage());// test finished!
