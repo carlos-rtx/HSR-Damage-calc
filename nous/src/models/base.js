@@ -27,12 +27,14 @@ export default class Character {
         }
 
     }
-    //now i have to do 
+    //now i have to do
     static normalize(int, isEr = false) {
        return isEr ?  Math.max(int, 1.00 ) : Math.max(int, 0.00 )
     }
     static precisionFix(int) {
             return Number(presicionFix(int))
     }
-    
+    get initialStats() {
+        return Object.freeze({ ...this.stats })
+    }
 }
