@@ -7,7 +7,8 @@
     "LCSuperimpositionLevel": 1,
     "level": 80,
     "lightConeLvl": 80,
-    "IsStandard": false
+    "IsStandard": false,
+    "IsE6": false 
   },
   "Sparkle": {
     "Rarity": 5,
@@ -17,7 +18,8 @@
     "LCSuperimpositionLevel": 1,
     "level": 80,
     "lightConeLvl": 80,
-    "IsStandard": false
+    "IsStandard": false,
+    "IsE6": false
   },
   "Cerydra": {
     "Rarity": 5,
@@ -27,7 +29,8 @@
     "LCSuperimpositionLevel": 1,
     "level": 80,
     "lightConeLvl": 80,
-    "IsStandard": false
+    "IsStandard": false,
+    "IsE6": false
   },
   "Terravox": {
     "Rarity": 5,

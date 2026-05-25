@@ -8,9 +8,9 @@ function App() {
   
 
   return (
-    <>
-      <p>WE OF THE GRID GRID GRID</p>
-    </>
+    <div className='placeholder'>
+      
+    </div>
   )
 }
 
