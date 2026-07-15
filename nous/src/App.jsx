@@ -1,17 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Github, Npm } from '@uiw/react-shields';
 
-function App() {
-  
-
+function Asdf() {
   return (
-    <div className='placeholder'>
-      
-    </div>
-  )
+    <>
+      <Npm.Version packageName="react-shields" />
+      <Github.Issues user="uiwjs" repo="react-shields" />
+    </>
+  );
 }
-
-export default App
+export default Asdf

@@ -1,18 +1,26 @@
-# React + Vite
+# HSR Damage Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful, modular damage calculator for **Honkai: Star Rail**, built with React.
 
-Currently, two official plugins are available:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Accurate damage calculations considering all major stats and modifiers
+- Modular character system using OOP (Object-Oriented Programming)
+- Highly maintainable and testable architecture
+- Clean, modern dark UI (designed in Figma)
+- Team building and buff management
+- Real-time damage preview
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🏗️ Architecture
 
-Note: This will impact Vite dev & build performances.
+This project was built with **modularity and testability** in mind.
 
-## Expanding the ESLint configuration
+### Core Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+src/
+├── tbd
+    └── DamageCalculator.test.js

@@ -18,5 +18,3 @@ const getDefenseMultiplier = (def, characterlevel, enemlevel, defbonus, defreduc
     return defMultiplier     
 }
 
-console.log(getBaseDEF(95));
-console.log(getDefenseMultiplier(1150, 80, 95, 0, 0, 0.77)); //example values for testing
